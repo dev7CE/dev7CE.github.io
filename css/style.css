@@ -8,3 +8,30 @@
 body {
     font-family: var(--default-font);
 }
+
+
+/************** Utilities *************/
+
+
+/************** Clearfix **************/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+
+/******* Margin collapsing fix *******/
+
+.mgn-collapsng-fix {
+    padding: 0.1px 0;
+}
+
+
+/************** Position relative **************/
+
+.relative {
+    position: relative;
+}
