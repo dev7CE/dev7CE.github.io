@@ -43,8 +43,17 @@ body {
 }
 
 
-/************** Position relative **************/
+/********* Position relative *********/
 
 .relative {
     position: relative;
+}
+
+
+/******** Container centered *********/
+
+.container-centered {
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
