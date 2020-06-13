@@ -1,3 +1,8 @@
+/******************* Utilities ******************/
+
+
+/***************** Mobile-first *****************/
+
 :root {
     --default-font: 'Mukta', sans-serif;
     --fw-bold: 700;
@@ -25,10 +30,11 @@ img {
 
 body {
     font-family: var(--default-font);
+    font-weight: var(--fw-light);
 }
 
 
-/************** Utilities *************/
+/******************* Utilities ******************/
 
 
 /************** Clearfix **************/
@@ -61,4 +67,78 @@ body {
     width: 98%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+/******************* Sections ******************/
+
+
+/************** Header ***************/
+
+header {
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+header p,
+header h1 {
+    margin: 0;
+}
+
+div.go-to {
+    height: 20vh;
+}
+
+div.absolute {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+div.go-to div.absolute a {
+    display: inline-block;
+}
+
+div.go-to div.absolute a:first-of-type {
+    margin-right: 2rem;
+}
+
+div.banner {
+    height: 60vh;
+}
+
+div.banner div.banner-absolute {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    left: 0%;
+}
+
+div.banner-absolute h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 9.6rem;
+}
+
+div.story {
+    background: url(../img/Story-Responsive-pana.png), var(--body-color);
+    background-repeat: no-repeat;
+    background-size: 70rem auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+div.banner div.bg-image-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+div.welcome-phrase {
+    height: 20vh;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--body-color);
+    line-height: 1.8;
 }
