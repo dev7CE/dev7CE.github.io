@@ -3,6 +3,9 @@
     --fw-bold: 700;
     --fw-regular: 400;
     --fw-light: 300;
+    --primary-color: #EE4540;
+    --secundary-color: #C72C41;
+    --body-color: #F2F2F2;
 }
 
 body {
