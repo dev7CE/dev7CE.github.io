@@ -1,0 +1,10 @@
+:root {
+    --default-font: 'Mukta', sans-serif;
+    --fw-bold: 700;
+    --fw-regular: 400;
+    --fw-light: 300;
+}
+
+body {
+    font-family: var(--default-font);
+}
