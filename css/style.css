@@ -198,3 +198,19 @@ ul.technologies {
     font-size: 2rem;
     display: block;
 }
+
+
+/******** UI Design Section **********/
+
+.ui-design-section h2 {
+    color: var(--body-color);
+}
+
+.ui-design-section {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.frames iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
