@@ -67,6 +67,22 @@ body {
 }
 
 
+/********** Flex Container ***********/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/************ Flex Item **************/
+
+.flex-container>* {
+    flex: 0 0 calc(100% - .5rem);
+}
+
+
 /******************* Sections ******************/
 
 
@@ -145,4 +161,28 @@ div.welcome-phrase {
 
 .bck-fix {
     height: 50rem;
+}
+
+
+/*********** Technologies ************/
+
+section.technologies>h2,
+section.technologies>p {
+    text-align: center;
+}
+
+ul.technologies {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.technologies li {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: lightgrey;
+}
+
+.technologies span {
+    font-size: 2rem;
+    display: block;
 }
