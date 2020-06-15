@@ -255,3 +255,23 @@ li.project a p {
     line-height: initial;
     margin: 0;
 }
+
+
+/********* Contact Section ***********/
+
+.contact {
+    text-align: center;
+}
+
+.contact img {
+    width: 20rem;
+    border-radius: 100%;
+    border: 1px solid;
+}
+
+.contact a {
+    color: var(--normal-text-color);
+    text-decoration: none;
+    display: block;
+    margin: 1rem 0;
+}
