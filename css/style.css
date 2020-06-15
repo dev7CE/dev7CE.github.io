@@ -7,6 +7,7 @@
     --fw-light: 300;
     --primary-color: #EE4540;
     --secundary-color: #C72C41;
+    --normal-text-color: #2D142C;
     --body-color: #F2F2F2;
 }
 
@@ -28,6 +29,17 @@ img {
 body {
     font-family: var(--default-font);
     font-weight: var(--fw-light);
+    font-size: 1.8rem;
+    color: var(--normal-text-color);
+}
+
+h2 {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 3rem;
 }
 
 
