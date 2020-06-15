@@ -1,6 +1,3 @@
-/******************* Utilities ******************/
-
-
 /***************** Mobile-first *****************/
 
 :root {
@@ -141,4 +138,11 @@ div.welcome-phrase {
     font-size: 2.5rem;
     color: var(--body-color);
     line-height: 1.8;
+}
+
+
+/********** Background Fix ***********/
+
+.bck-fix {
+    height: 50rem;
 }
