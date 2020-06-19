@@ -275,3 +275,34 @@ li.project a p {
     display: block;
     margin: 1rem 0;
 }
+
+
+/************* Footer ***************/
+
+footer {
+    color: var(--body-color);
+    background-color: var(--primary-color);
+}
+
+footer p {
+    line-height: 1.7;
+}
+
+footer p,
+footer h3 {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+}
+
+.about {
+    background-color: var(--secundary-color);
+}
+
+#link-icons svg {
+    vertical-align: text-bottom;
+    height: 22px;
+}
