@@ -8,6 +8,8 @@
     --primary-color: #EE4540;
     --secundary-color: #C72C41;
     --normal-text-color: #2D142C;
+    --primary-hover-color: #2D142C;
+    --secundary-hover-color: #EE4540;
     --body-color: #F2F2F2;
 }
 
@@ -132,8 +134,16 @@ div.go-to div.absolute-center a {
     display: inline-block;
 }
 
+div.go-to div.absolute-center a svg {
+    transition: fill .5s;
+}
+
 div.go-to div.absolute-center a:first-of-type {
     margin-right: 2rem;
+}
+
+header a:hover svg {
+    fill: var(--primary-hover-color);
 }
 
 div.banner {
@@ -256,6 +266,24 @@ li.project a p {
     margin: 0;
 }
 
+li.project>a,
+li.project>a>* {
+    transition: all .9s;
+}
+
+li.project>a:hover {
+    background-color: transparent;
+}
+
+li.project>a:hover img {
+    opacity: 1;
+}
+
+li.project>a:hover p {
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 /********* Contact Section ***********/
 
@@ -278,7 +306,6 @@ li.project a p {
     text-decoration: none;
     display: inline-block;
     font-size: 2rem;
-    padding: 1px 0;
 }
 
 .personal-link a::after {
@@ -298,9 +325,7 @@ a.chevron::after {
 }
 
 .personal-link a:hover {
-    background-color: lightgrey;
-    border-radius: 6px;
-    padding: 1px 10px;
+    text-decoration: underline;
 }
 
 
@@ -323,6 +348,12 @@ footer h3 {
 footer a {
     text-decoration: none;
     font-weight: var(--fw-bold);
+    transition: color .5s;
+}
+
+footer a:hover:not(#link-icons) {
+    color: var(--primary-hover-color);
+    text-decoration: underline;
 }
 
 .about {
@@ -332,4 +363,9 @@ footer a {
 #link-icons svg {
     vertical-align: text-bottom;
     height: 22px;
+    transition: fill .5s;
+}
+
+a#link-icons:hover svg {
+    fill: var(--primary-hover-color);
 }
