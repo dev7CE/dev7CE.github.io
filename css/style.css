@@ -256,6 +256,9 @@ ul.technologies {
 }
 
 @media (min-width: 768px) {
+    section.technologies>p {
+        text-align: left;
+    }
     .technologies.flex-container>* {
         flex: 0 0 calc(20% - .5rem);
     }
