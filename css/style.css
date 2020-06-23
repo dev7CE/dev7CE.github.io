@@ -40,6 +40,12 @@ h2 {
     color: var(--primary-color);
 }
 
+@media (min-width: 768px) {
+    h2 {
+        text-align: left!important;
+    }
+}
+
 h3 {
     font-size: 3rem;
 }
@@ -166,7 +172,7 @@ div.banner-absolute h1 {
 div.story {
     background: url(../img/Story-Responsive-pana.png), var(--body-color);
     background-repeat: no-repeat;
-    background-size: 70rem auto;
+    background-size: 100vw auto;
     background-attachment: fixed;
     background-position: center;
 }
@@ -185,11 +191,35 @@ div.welcome-phrase {
     line-height: 1.8;
 }
 
+@media (min-width: 768px) {
+    div.story {
+        background-size: 70rem auto;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 320px) {
+    h1 {
+        font-size: 6.6rem;
+    }
+    h1 br {
+        display: none;
+    }
+    .welcome-phrase p {
+        font-size: 1.5rem;
+    }
+}
+
 
 /********** Background Fix ***********/
 
 .bck-fix {
-    height: 50rem;
+    height: 30rem;
+}
+
+@media (min-width: 425px) {
+    .bck-fix {
+        height: 40rem;
+    }
 }
 
 
@@ -214,6 +244,21 @@ ul.technologies {
 .technologies span {
     font-size: 2rem;
     display: block;
+}
+
+@media (min-width: 425px) {
+    .technologies.flex-container {
+        justify-content: flex-start;
+    }
+    .technologies.flex-container>* {
+        flex: 0 0 calc(50% - .5rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .technologies.flex-container>* {
+        flex: 0 0 calc(20% - .5rem);
+    }
 }
 
 
@@ -284,6 +329,13 @@ li.project>a:hover p {
     visibility: hidden;
 }
 
+@media (min-width: 768px) {
+    .flex-container>*.project:not(:first-of-type) {
+        flex: 0 0 calc(50% - .5rem);
+        margin-right: auto;
+    }
+}
+
 
 /********* Contact Section ***********/
 
@@ -347,6 +399,28 @@ a.chevron::after {
     text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+    .background-c-opacity {
+        padding-bottom: 2rem;
+    }
+    .contact {
+        text-align: unset;
+        max-width: 45rem;
+    }
+    .contact h2 {
+        text-align: center!important;
+    }
+    .personal-link {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        margin: 0;
+        margin-left: 2rem;
+        width: 31rem;
+    }
+}
+
 
 /************* Footer ***************/
 
@@ -387,4 +461,16 @@ footer a:hover:not(#link-icons) {
 
 a#link-icons:hover svg {
     fill: var(--primary-hover-color);
+}
+
+@media (min-width: 768px) {
+    .rights div p>br {
+        display: none;
+    }
+    a#link-icons {
+        margin-left: .5rem;
+    }
+    a#link-icons svg {
+        vertical-align: middle;
+    }
 }
